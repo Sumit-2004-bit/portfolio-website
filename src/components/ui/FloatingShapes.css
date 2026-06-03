@@ -1,0 +1,19 @@
+.floating-shapes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-shapes__blob {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(56, 189, 248, 0.35),
+    rgba(10, 102, 194, 0.12) 60%,
+    transparent 70%
+  );
+  filter: blur(2px);
+}

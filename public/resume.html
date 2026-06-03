@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumit Deshmukh — Resume</title>
+  <style>
+    :root {
+      --text: #000;
+      --link: #0563c1;
+      --rule: #000;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, Georgia, serif;
+      font-size: 11pt;
+      line-height: 1.35;
+      color: var(--text);
+      background: #fff;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.55in 0.6in;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .resume-header {
+      text-align: center;
+      margin-bottom: 0.35in;
+    }
+
+    .resume-header h1 {
+      font-size: 18pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.12in;
+    }
+
+    .resume-header p {
+      font-size: 11pt;
+      margin-bottom: 0.06in;
+    }
+
+    .sep::before {
+      content: ' \25C6 ';
+      font-size: 9pt;
+      vertical-align: middle;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 0.22in;
+    }
+
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.06in;
+    }
+
+    hr.section-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin-bottom: 0.12in;
+    }
+
+    /* Career objective */
+    .objective p {
+      text-align: justify;
+    }
+
+    /* Education & cert rows */
+    .entry-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.04in;
+    }
+
+    .entry-row strong {
+      font-weight: 700;
+    }
+
+    .entry-date {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .entry-sub {
+      margin-bottom: 0.14in;
+    }
+
+    .entry-sub p {
+      margin-top: 0.02in;
+    }
+
+    /* Skills */
+    .skills-list {
+      list-style: none;
+    }
+
+    .skills-list li {
+      margin-bottom: 0.06in;
+    }
+
+    .skills-list strong {
+      font-weight: 700;
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 0.14in;
+    }
+
+    .project-title {
+      font-weight: 700;
+      margin-bottom: 0.04in;
+    }
+
+    .project p {
+      text-align: justify;
+    }
+
+    /* Certifications */
+    .cert-list {
+      list-style: none;
+    }
+
+    .cert-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.08in;
+    }
+
+    .cert-list li span:first-child {
+      flex: 1;
+    }
+
+    /* Print toolbar (hidden when printing) */
+    .print-bar {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+    }
+
+    .print-bar button {
+      padding: 0.5rem 1rem;
+      background: #0a66c2;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .print-bar button:hover {
+      background: #084d94;
+    }
+
+    @media print {
+      body {
+        padding: 0.5in;
+        max-width: none;
+      }
+
+      .print-bar {
+        display: none;
+      }
+
+      a {
+        color: var(--link);
+      }
+    }
+
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+  </style>
+</head>
+<body>
+  <header class="resume-header">
+    <h1>Sumit Deshmukh</h1>
+    <p>
+      +91 9325024960
+      <span class="sep"></span>
+      Amravati, Maharashtra, India
+    </p>
+    <p>
+      <a href="mailto:deshmukhsumit2503@gmail.com">deshmukhsumit2503@gmail.com</a>
+      <span class="sep"></span>
+      <a href="https://www.linkedin.com/in/sumit-deshmukh25" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </header>
+
+  <section class="objective">
+    <h2 class="section-title">Career Objective</h2>
+    <hr class="section-rule" />
+    <p>
+      Frontend Developer Fresher with hands-on experience in building responsive web applications
+      using React.js, JavaScript (ES6+), HTML5, CSS3, and MySQL. Seeking an opportunity to
+      contribute to web development projects, enhance user experience, and grow as a professional
+      software developer in a dynamic team environment.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <hr class="section-rule" />
+
+    <div class="entry-sub">
+      <div class="entry-row">
+        <strong>Bachelor of Engineering in Information Technology</strong>
+        <span class="entry-date">2022 – 2026</span>
+      </div>
+      <p>Prof. Ram Meghe College of Engineering and Management, Amravati</p>
+      <p>CGPA: 6.0</p>
+    </div>
+
+    <div class="entry-sub">
+      <div class="entry-row">
+        <strong>HSC (Maharashtra State Board)</strong>
+        <span class="entry-date">2021 – 2022</span>
+      </div>
+      <p>Saint Pauls Junior College, Akot</p>
+      <p>Percentage: 81.17%</p>
+    </div>
+
+    <div class="entry-sub">
+      <div class="entry-row">
+        <strong>SSC (Maharashtra State Board)</strong>
+        <span class="entry-date">2019 – 2020</span>
+      </div>
+      <p>Harlalka English School, Shegaon</p>
+      <p>Percentage: 83.20%</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Technical Skills</h2>
+    <hr class="section-rule" />
+    <ul class="skills-list">
+      <li><strong>Programming Languages:</strong> C, Java, JavaScript</li>
+      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js</li>
+      <li><strong>Databases:</strong> MySQL</li>
+      <li>
+        <strong>Core Concepts:</strong> DSA, OOP, DBMS, Operating Systems, Computer Networks
+      </li>
+      <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <hr class="section-rule" />
+
+    <article class="project">
+      <p class="project-title">Grow With Us – Local Marketplace Web Application</p>
+      <p>
+        Developed a web-based marketplace platform connecting local sellers with nearby customers
+        using React.js, JavaScript, HTML5, CSS3, and MySQL. Implemented product listings, seller
+        profiles, search functionality, and responsive UI. Used Git and GitHub for version control
+        and collaborative development.
+      </p>
+    </article>
+
+    <article class="project">
+      <p class="project-title">Personal Portfolio Website</p>
+      <p>
+        Built a responsive portfolio using React.js, JavaScript, HTML5, and CSS3 to showcase skills,
+        projects, and contact information. Designed reusable UI components, used React Hooks for
+        state management, and applied mobile-friendly layouts with performance optimization.
+      </p>
+    </article>
+  </section>
+
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <hr class="section-rule" />
+    <ul class="cert-list">
+      <li>
+        <span><strong>Certificate Course in Core Java</strong> – JK Innovative CAD-DESK, Amravati</span>
+        <span class="entry-date">Nov 2024</span>
+      </li>
+      <li>
+        <span><strong>JavaScript Essentials 1</strong> – Cisco</span>
+        <span class="entry-date">Jan 2026</span>
+      </li>
+    </ul>
+  </section>
+
+  <div class="print-bar" aria-label="Resume actions">
+    <button type="button" onclick="window.print()">Save as PDF</button>
+  </div>
+</body>
+</html>
